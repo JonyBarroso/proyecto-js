@@ -1,0 +1,199 @@
+body{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+
+/* nav */
+
+
+/* :root{
+    --padding-contenedor: 100px 0;
+    --color-title: #006568;
+} */
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-contenedor);
+    
+}
+
+.pagina{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 700px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+   /*  color: #fff; */
+    
+}
+
+.pagina::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:auto;
+    /* background-image: linear-gradient(170deg, #0000008c 0%, #0000008c 100%), url(../imagenes/athena.jpg);/*  */
+    z-index: -1; 
+}
+
+
+.nav{
+    --padding-contenedor:0;
+    height: 120%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo{
+    font-weight: 300px;
+    
+}
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+
+}
+
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__links{
+   /*  color: #fff; */
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+
+}
+
+.nav__close{
+    display: var(--show, none);
+}
+
+.titulo__contenedor{
+    max-width: 800px;
+    --padding-contenedor:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.titulo__nombre{
+    font-size: 2rem;
+}
+
+.titulo__parrafo{
+    margin-bottom: 20px;
+}
+
+.titulo__ancor{
+    text-decoration: none;
+    background-color: brown;
+    display: inline-block;
+    justify-self: center;
+    color: #fff;
+    padding: 13px 20px;
+    border-radius: 30px;
+}
+
+/* subtitulo */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about{
+    width: 48%;
+    border-image: 30px;
+
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+    border-image: auto;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* 
+.subtitulo__contenedor{
+    text-align: center;
+    
+}
+
+.subtitulo{
+    color: #006568;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.articulo__contenedor{
+    display: grid;
+    gap: 2em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.imagen__articulo{
+    width: 40px;
+}
+
+.articulo{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    overflow: hidden; 
+    margin: 0 auto;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+} */
