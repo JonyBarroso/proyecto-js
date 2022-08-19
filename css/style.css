@@ -48,15 +48,26 @@ body{
 
 .nav{
     --padding-contenedor:0;
-    height: 120%;
+    height: 150%;
     display: flex;
     align-items: center;
+
 }
 
 .nav_logo{
     font-weight: 300px;
     
 }
+.imagen__logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+}
+
+
 .nav__link{
     margin-left: auto;
     padding: 0;
@@ -91,6 +102,11 @@ body{
 
 .nav__close{
     display: var(--show, none);
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .titulo__contenedor{
@@ -145,7 +161,7 @@ body{
 }
 
 .contenido-textos h3 span{
-    background: #4d0686;
+    background: #08c168;
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -197,3 +213,40 @@ body{
     gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(230px, auto));
 } */
+
+/* Frases */
+
+.frases{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    overflow: hidden;
+}
+
+.frases__contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.figura__frases{
+    max-width: 500px;
+}
+
+.img__frases{
+    width: 100%;
+    display: block;
+}
+
+.parrafo__frases{
+    line-height: 1.9px;
+    margin-bottom: 20px;
+}
+
+.titulo__frases{
+    color: #006568;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
