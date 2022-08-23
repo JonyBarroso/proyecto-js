@@ -1,16 +1,13 @@
 body{
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-family: 'Spline Sans Mono', monospace;
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+
 }
 
-
 /* nav */
-
-
-/* :root{
-    --padding-contenedor: 100px 0;
-    --color-title: #006568;
-} */
 
 .contenedor{
     width: 90%;
@@ -58,13 +55,16 @@ body{
     font-weight: 300px;
     
 }
+
 .imagen__logo{
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     width: 120px;
-    height: 120px;
+    height: 120px; 
     border-radius: 70px;
+    object-fit: cover;
+    object-position: 50% 30%;
 }
 
 
@@ -146,8 +146,9 @@ body{
 }
 
 .imagen-about{
-    width: 48%;
+    width: 35%;
     border-image: 30px;
+    border-radius: 70%;
 
 }
 
@@ -163,12 +164,12 @@ body{
 .contenido-textos h3 span{
     background: #08c168;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 20%;
     display: inline-block;
     text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
     box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
     margin-right: 5px;
 }
@@ -179,45 +180,12 @@ body{
     text-align: justify;
 }
 
-/* 
-.subtitulo__contenedor{
-    text-align: center;
-    
-}
-
-.subtitulo{
-    color: #006568;
-    font-size: 2rem;
-    margin-bottom: 25px;
-}
-
-.articulo__contenedor{
-    display: grid;
-    gap: 2em;
-    justify-items: center;
-    width: 260px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.imagen__articulo{
-    width: 40px;
-}
-
-.articulo{
-    padding-top: 80px;
-    display: grid;
-    width: 90%;
-    overflow: hidden; 
-    margin: 0 auto;
-    gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
-} */
-
 /* Frases */
 
 .frases{
-    background-color: #e5e5f7;
+    background-color: #7a7add;
+    margin-top: 150px;
+    padding: 40px 20px;
     opacity: 0.8;
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
@@ -227,7 +195,7 @@ body{
 .frases__contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 7em;
     align-items: center;
 }
 
@@ -236,8 +204,9 @@ body{
 }
 
 .img__frases{
-    width: 100%;
+    width: auto;
     display: block;
+    position:relative;
 }
 
 .parrafo__frases{
@@ -249,4 +218,27 @@ body{
     color: #006568;
     font-size: 40px;
     margin-bottom: 25px;
+}
+.articulo{
+    background-color: #aeeb64;
+    text-align: center;  
+    padding: 90px;
+    margin: 90px;
+    opacity: 0.8;
+    background-size: 10px 10px;
+    font-size: large;
+    overflow: hidden;
+}
+
+.articulo__contenedor{
+    text-align: center;
+}
+
+.redes{
+    background-color: #f3d6ad4f;
+    padding: 40px 20px;
+}
+.redes__contenedor{
+    text-align: center;
+
 }
