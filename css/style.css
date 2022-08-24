@@ -14,7 +14,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    padding: var(--padding-contenedor);
+    padding: 30px;
     
 }
 
@@ -26,22 +26,9 @@ body{
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-   /*  color: #fff; */
+    color: #fff;
     
 }
-
-.pagina::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size:auto;
-    /* background-image: linear-gradient(170deg, #0000008c 0%, #0000008c 100%), url(../imagenes/athena.jpg);/*  */
-    z-index: -1; 
-}
-
 
 .nav{
     --padding-contenedor:0;
@@ -82,6 +69,28 @@ body{
     list-style: none;
 }
 
+.menu__vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.nav__links li:hover .menu__vertical{
+    display: block;
+}
+
+.menu__vertical li:hover {
+    background-color: black;
+}
+.menu__vertical li a {
+    display: block;
+    color: white;
+    padding: 15 px 15px 15px 20px;
+
+}
+
 
 .nav__links{
    /*  color: #fff; */
@@ -105,7 +114,7 @@ body{
 }
 
 .titulo{
-    text-align: center;
+    text-align:center;
     margin-bottom: 30px;
 }
 
@@ -117,7 +126,7 @@ body{
     align-content: center;
     gap: 1em;
     padding-bottom: 100px;
-    text-align: center;
+    text-align:center;
 }
 
 .titulo__nombre{
@@ -136,6 +145,8 @@ body{
     color: #fff;
     padding: 13px 20px;
     border-radius: 30px;
+    text-align: center;
+    
 }
 
 /* subtitulo */
@@ -162,7 +173,7 @@ body{
 }
 
 .contenido-textos h3 span{
-    background: #08c168;
+    background: #e23c7c;
     color: #fff;
     border-radius: 20%;
     display: inline-block;
@@ -187,7 +198,7 @@ body{
     margin-top: 150px;
     padding: 40px 20px;
     opacity: 0.8;
-    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-image: radial-gradient(#d339d3 0.5px, #ac9738 0.5px);
     background-size: 10px 10px;
     overflow: hidden;
 }
@@ -210,7 +221,7 @@ body{
 }
 
 .parrafo__frases{
-    line-height: 1.9px;
+    line-height: 2.5px;
     margin-bottom: 20px;
 }
 
@@ -218,6 +229,7 @@ body{
     color: #006568;
     font-size: 40px;
     margin-bottom: 25px;
+
 }
 .articulo{
     background-color: #aeeb64;
@@ -241,4 +253,49 @@ body{
 .redes__contenedor{
     text-align: center;
 
+}
+
+/* Sobre nosotros */
+
+.nosotros{
+    margin-top: 80px;
+    padding: 40px 20px;
+    opacity: 0.8;
+    background-size: 10px 10px;
+    overflow: hidden;
+    
+}
+
+.sobre__nosotros{
+    display:inline;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    align-items: center;
+
+}
+
+.titulo__nosotros{
+    color:#b78b13;
+    font-size: 40px;
+    margin-bottom: 25px;
+
+}
+
+.texto{
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+    padding: 20px;
+}
+
+.nosotros{
+    text-align: center;
+    
+}
+
+.video__mate{
+  text-align: center;
+  font-size: 20px;
+  font-size: 45px;
 }
