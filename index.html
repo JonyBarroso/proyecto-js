@@ -1,144 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagenes/athena.jpg" type="image/x-icon">
+    <title>Athena.Deco</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/athena.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500;600&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
-    <title>Athena.Deco</title>
+
 </head>
 <body>
-    
-    <header class="pagina">
-
-       <nav class="nav contenedor">
-        <div class="nav_logo">
-            <a class="nav__logo-img" href="index.html">
-            <img class="imagen__logo" src="./imagenes/athena.jpg" alt="logo athena"></a>
-            <h2>Athena.Deco</h2>
-        </div>
-        <ul class="nav__link nav__link--menu">
-            <li class="nav__items">
-                <a href="#" class="nav__links">Inicio</a>
-            </li>
-            <li class="nav__items">
-                <a href="./paginas html/sobrenosotros.html" class="nav__links">Sobre Nosotros</a>
-            </li>
-            <li class="nav__items">
-                <a href="./paginas html/micuenta.html" class="nav__links">Mi Cuenta</a>
-            </li>
-            <li class="nav__items">
-                <a href="./paginas html/tienda.html" class="nav__links">Tienda</a>
-                <ul class="menu__vertical">
-                    <li><a href="#">Como comprar</a></li>
-                    <li><a href="#">como curar el mate</a></li>
-                    <li><a href="#">tips</a></li>
-                </ul>
-            </li>
-            <li class="nav__items">
-                <a href="./paginas html/contacto.html" class="nav__links">Contacto</a>
-            </li>
-
-            <img src="./imagenes/close.png" alt="" class="nav__close">
-
-        </ul> 
-
-            <div class="nav__menu">
-                <img src="./imagenes/menu.png" alt="" class="nav__img">
-            </div>
-                
-       </nav> 
-
-       <section class="titulo__contenedor">
-        <h1 class="titulo__nombre">Bienvenidos a Athena.Deco</h1>
-        <p class="titulo__parrafo">Mates Artesanales<br>Mates de madera, pintados a mano</p>
-        <a href="./paginas html/tienda.html" class="titulo__ancor">Ir a la Tienda</a>
-        
-
-       </section>
-
-
+    <header>
+        <h1 id="titulo" class="titulo">Athena.Deco</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
     </header>
 
-    <section class="contenedor sobre-nosotros">
-        <h2 class="titulo">¿Porque elegirnos?</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="./imagenes/athena.jpg" class="imagen-about">
-            <div class="contenido-textos">
-                <h3><span></span>Nuestro compromiso es complacer nuestros clientes</h3>
-                <p>Buscamos la excelencia. Nuestros trabajos son muy importantes para nosotros, por lo tanto, todo lo que hacemos por nuestros clientes lo consideramos muy valioso.</p>
-                <h3><span></span>Porque elegirnos fue la mejor opcion</h3>
-              <p>Buenas experiencias con nuestro emprendimiento.</p>
-              <h3><span></span>Amamos lo que hacemos</h3>
-              <p>Prometemos lo que hacemos en tiempo y forma.</p>
+
+    <main id="contenedor-productos">
+
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
             </div>
-            </div>
-    </section>
-
-
-    <section class="frases">
-        <div class="frases__contenedor">
-            <div class="texto__frases">
-                <h2 class="titulo__frases">Tomar Mates, es siempre una buena idea</h2>
-                <p class="parrafo__frases">Un Mate previo al almuerzo de un domingo, es señal de descanso</p>
-                <a href="./paginas html/tienda.html" class="titulo__ancor">Ve a la Tienda</a>
-            </div>
-        
-            <figure class="figura__frases">
-                <img src="./imagenes/geometrico.jpeg" alt="" class="img__frases">
-            </figure>
-
-        </div>
-    </section>
-
-    <section class="articulo">
-        <div class="articulo__contenedor">
-            <h3>¿Por qué deberías elegirnos? 
-            </h3><br>
-                <p class="articulo__parrafo">
-            Porque somos apasionados y comprometidos, porque trabajamos para vos con todo el detalle que un mate, producto que nos acompaña en diversos momentos de la vida, lo merece. Porque pintamos según tu gusto o el gusto de la persona a quien se lo quieras obsequiar, con amor y dedicación.
-                </p>     
-        </div>
-    </section>
-
-    <div class="redes">
-        <div class="redes__contenedor">
-            <a target="_blank" href="https://instagram.com/athena.deco" class="titulo__ancor">
-                    <div>Seguinos en Instagram</div>
-                    <h2 class="titulo">@athena.deco</h2>
-            </a>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
     </div>
 
-    <article class="video">
-        <div class="video__mate">
-            <p class="titulo">Como curar un mate de madera</p>
-                <iframe class="video__mate mate" width="650" height="500" src="https://www.youtube.com/embed/2Xwj9qIv_6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-    </article>
-
-    
-
-
-
-  <!--   <footer class="footer__final">
-        <section class="footer__contenedor">
-            <nav class="footer__nav">
-                <h2 class="footer__titulo">
-
-                </h2>
-            </nav>
-        </section>
-    </footer> -->
-
-    
-
-
+    <script defer src="./stock.js"></script>
+    <script defer src="./modal.js"></script>
+    <script defer src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+let stockProductos = [
+    {id: 1, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 2, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 3, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 4, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 5, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 6, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 7, nombre: "Mate Geometrico", cantidad: 1, desc: "Mate Personalizado", precio: 1200, img: './imagenes/geometrico flores.jepg'},
+    {id: 8, nombre: "Mate Perita Fino", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 9, nombre: "Mate Perita Fino", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 10, nombre: "Mate Perita Fino", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 11, nombre: "Mate Perita", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 12, nombre: "Mate Perita", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 13, nombre: "Mate Perita", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 14, nombre: "Mate Perita", cantidad: 1, desc: "Mate Personalizado", precio: 1100, img: './imagenes/geometrico flores.jepg'},
+    {id: 15, nombre: "Cazuela", cantidad: 1, desc: "Cazuela Personalizado", precio: 1300, img: './imagenes/geometrico flores.jepg'},
+    {id: 16, nombre: "Cazuela", cantidad: 1, desc: "Cazuela Personalizada", precio: 1300, img: './imagenes/geometrico flores.jepg'},
+    {id: 16, nombre: "Cazuela", cantidad: 1, desc: "Cazuela Personalizada", precio: 1300, img: './imagenes/geometrico flores.jepg'},
+    {id: 16, nombre: "Cazuela", cantidad: 1, desc: "Cazuela Personalizada", precio: 1300, img: './imagenes/geometrico flores.jepg'},
+
+    ]
